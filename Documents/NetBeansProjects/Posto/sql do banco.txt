@@ -1,0 +1,25 @@
+create table posto(
+idpaciente bigint auto_increment,
+cartao bigint not null,  
+nome varchar(50) not null,
+estadocivil varchar(20) not null,    
+cor varchar(10)not null,
+sexo varchar(10)not null,
+rg bigint not null,
+nacional varchar(20)not null,
+endereco varchar(50)not null,
+num bigint not null,
+cep bigint not null,
+cidade varchar(50) not null,
+estado varchar(20) not null,
+tel bigint not null,   
+primary key(idpaciente)
+)
+
+create table medicamento(
+idmedicamento bigint auto_increment,
+nome varchar(50) not null,
+fabricante varchar(50) not null,
+quantidade bigint not null,
+primary key(idmedicamento)
+)
