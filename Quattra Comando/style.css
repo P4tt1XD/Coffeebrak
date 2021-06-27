@@ -3,38 +3,31 @@ body {
     text-align: center;
     background-image: url("images/fundo2.png");
     font-family: fantasy;
-    align-items: center;
   }
   
   .game-intro {
     padding: 0% 10%;
-    justify-self: center;
+    float: left;
   }
   
   .game-intro p {
     font-size: 18px;
-    font-family: fantasy;
     color: white;
-    justify-self: center;
   }
   
   .logo-img {
-    width: 500px;
+    width: 350px;
   }
   
   #score-board{
     color: white;
-    font-family: fantasy;
   }
   
   #game-board {
-      float: left;
-      padding: 20px 0px;
-  }
-  
-  #game-board {
-    float:none;
+    float: right;
     padding: 20px 0px;
     align-items: center;
-    justify-self: center;
+    margin-top: 0%;
   }
+
+  
