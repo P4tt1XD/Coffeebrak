@@ -21,7 +21,6 @@ window.onload = () => {
 
   function startGame() {
     updateCanvas();
-    bgAudio.start();
   }
 
     const canvas = document.getElementById("canvas");
@@ -152,7 +151,7 @@ window.onload = () => {
     }
 
     draw(){
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "black";
     ctx.fillRect(this.posX, this.posY, this.width, this.height);
   }
     move(){
@@ -201,9 +200,8 @@ window.onload = () => {
             return true;
         }
     }
-    if(frames % 90 === 0){
+    if(frame % 90 === 0){
       createObstacle();
     }
   }
-  const obs = new Obstacle("./images/inimigo.png", 210, 500, 100, 160);
 };
