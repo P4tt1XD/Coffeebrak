@@ -1,41 +1,30 @@
 body {
     padding: 0;
     text-align: center;
-    background-image: url("images/background.jpg");
+    background-image: url("images/fundo2.jpg");
     font-family: fantasy;
+    align-items: center;
   }
   
   .game-intro {
-    float: left;
     padding: 0% 10%;
+    justify-self: center;
   }
   
   .game-intro p {
     font-size: 18px;
-    font-family: "Verdana"
+    font-family: fantasy;
+    color: white;
+    justify-self: center;
   }
   
   .logo-img {
     width: 500px;
-    position: absolute;
   }
   
-  .arrows-img {
-    width: 150px;
-  }
-  
-  body button {
-    font-size: 30px;
-    background-image: url(./images/start-button.png);
-    padding: 20px 40px;
-    border: 0;
-    box-shadow: 0;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto; 
-    width: 150px;
-    height: 150px;
+  #score-board{
+    color: white;
+    font-family: fantasy;
   }
   
   #game-board {
@@ -44,7 +33,8 @@ body {
   }
   
   #game-board {
-    float: left;
+    float:none;
     padding: 20px 0px;
-  
+    align-items: center;
+    justify-self: center;
   }

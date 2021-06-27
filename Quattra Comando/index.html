@@ -5,17 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <embed src="sounds/bensound-scifi.mp3" AUTOSTART=”TRUE” HIDDEN=”FALSE”/>
     <title>Quattra Comando</title>
+    <audio autoplay="autoplay" >
+    <source src="./sounds/bensound-scifi.mp3" type="audio/mp3" />
+      seu navegador não suporta HTML5
+    </audio>
   </head>
   <body>
+
     <div class="game-intro">
       <img src="./images/logo.png" alt="" class="logo-img" />
       <br />
-      <button id="start-button"></button>
+       <button id="start-button">
+      <img src="./images/start-button.png" alt="loading" width="150px" height="150px"/>
+      </button>
       <p>Use the left and right arrow to control your space ship, cadet!!!</p>
-      <img src="./images/arrows.png" alt="" class="arrows-img" />
-    </div>
+      <p>It's a single homage at a game that I played when young!!!</p>
+     </div>
     <div id="score-board">
       Score: <span id="score">0</span>
       </div>

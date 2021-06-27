@@ -21,6 +21,7 @@ window.onload = () => {
 
   function startGame() {
     updateCanvas();
+    bgAudio.start();
   }
 
     const canvas = document.getElementById("canvas");
@@ -138,7 +139,8 @@ window.onload = () => {
        );
      }
     }
-   const player = new Nave("./images/nave.png", 210, 500, 60, 160);
+
+   const player = new Nave("./images/nave.png", 210, 500, 100, 160);
 
   class Obstacle{
     constructor (x, w){
@@ -199,10 +201,9 @@ window.onload = () => {
             return true;
         }
     }
-    
-
     if(frames % 90 === 0){
       createObstacle();
     }
   }
+  const obs = new Obstacle("./images/inimigo.png", 210, 500, 100, 160);
 };
