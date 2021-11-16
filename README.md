@@ -3,6 +3,9 @@ A social network
 
 ## Demo: https://coffeebreake.herokuapp.com/
 
+username: pati@gmail.com
+password: 123456
+
 
 ## Install dependencies for server 
 https://github.com/P4tt1XD/Server.git
