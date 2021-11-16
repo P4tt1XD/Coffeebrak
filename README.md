@@ -5,6 +5,7 @@ A social network
 
 
 ## Install dependencies for server 
+https://github.com/P4tt1XD/Server.git
 ### `npm install`
 
 ## Connect to your mongodb and add info in .env
