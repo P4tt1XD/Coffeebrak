@@ -1,17 +1,11 @@
-# MERN Stack - Build a social media app 
-> MERN Stack Build  a social media app (instagram , facebook, twitter clone) with MERN  + Redux  + Bootstrap 4
+# Cooffebreak
+A social network
 
 ## Demo: https://v-network-devat.herokuapp.com/
 
-## Author: Dev AT
-
-## Youtube tutorials: https://www.youtube.com/watch?v=DLtVKgkCKx8&list=PLs4co9a6NhMyAfSnDg1MKGwLdLx0OA07d
 
 ## Install dependencies for server 
 ### `npm install`
-
-## Install dependencies for client
-### cd client ---> `npm install`
 
 ## Connect to your mongodb and add info in .env
 
@@ -28,6 +22,6 @@
 
 ### Interface 
 
-![alt](https://res.cloudinary.com/devat-channel/image/upload/v1621001242/v-network/Untitled_q3jvqa.png)
+![alt](https://res.cloudinary.com/dagyejjin/image/upload/v1637029221/Coffeebreak/Tela_ytl6ty.png)
 
 
