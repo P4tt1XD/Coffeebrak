@@ -1,7 +1,7 @@
 # Cooffebreak
 A social network
 
-## Demo: https://v-network-devat.herokuapp.com/
+## Demo: https://coffeebreake.herokuapp.com/
 
 
 ## Install dependencies for server 
