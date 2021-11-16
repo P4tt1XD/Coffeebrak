@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import axios from 'axios';
+
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Header from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import Home from '../../../components/Home';
+import GameList from '../../../components/GamesList';
+
+class App extends Component {
+  state = {
+    GameList: []
+  }
+
+  componentDidMount = () => {
+    console.log(process.env)
+    axios.get(`http://localhost:8000/games`)
+    .then((result) => {
+      this.setState({
+        GameList: result.data
+      })
+    })
+  }
+
+  render () {
+    return (
+      <>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route patch="/games" render={(props) => <GameList {...props} games={this.state.GameList} />}/> 
+      </Switch>
+      <Footer />
+      </>
+    );
+  }
+
 }
 
 export default App;
