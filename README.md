@@ -1,10 +1,9 @@
 # Cooffebreak
-A social network
+<h1>A social network, feel free to use S2</h1>
 
 ## Demo: https://coffeebreake.herokuapp.com/
 
-username: pati@gmail.com
-password: 123456
+
 
 
 ## Install dependencies for server 
